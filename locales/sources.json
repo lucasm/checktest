@@ -1,0 +1,40 @@
+{
+  "categories": [
+    {
+      "id": "domain_info",
+      "title": "Domain register",
+      "active": true,
+      "data": [
+        {
+          "name": "W3Techs",
+          "action": "https://w3techs.com/sites/info/",
+          "protocol": false
+        }
+      ]
+    },
+    {
+      "id": "domain_info",
+      "title": "Domain register",
+      "active": true,
+      "data": [
+        {
+          "name": "PWABuilder",
+          "action": "https://www.pwabuilder.com/reportcard?site=",
+          "protocol": true
+        }
+      ]
+    },
+    {
+      "id": "pwa",
+      "title": "PWA",
+      "active": true,
+      "data": [
+        {
+          "name": "PWABuilder",
+          "action": "https://www.pwabuilder.com/reportcard?site=",
+          "protocol": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "country": "Brasil",
+  "country_code": "BR",
+  "t": {
+    "placeholder": "Buscar",
+    "search": "Buscar",
+    "trends": "Tendências",
+    "settings": "Ajustes",
+    "clear": "Limpar",
+    "voice": "Voz",
+    "voiceSearch": ["Ouvindo"],
+    "theme": "Tema",
+    "language": "Idioma",
+    "powered": "Fornecido por",
+    "about": "Sobre",
+    "open": "Abrir app",
+    "contribute": "Contribua",
+    "community": "Comunidade",
+    "donate": "Doar",
+    "feedback": "Feedback",
+    "link_feedback": "https://forms.gle/r6XAyB1ZLn9qzwp16",
+    "terms": "Termos",
+    "privacy": "Privacidade",
+    "privacyScore": [
+      "muito pobre",
+      "justa",
+      "boa",
+      "muito boa",
+      "excepcional",
+      "indisponível",
+      "ainda não foi analisado",
+      "Nível de privacidade"
+    ],
+    "carbon": "Carbono",
+    "carbonScore": [
+      "mais limpo que outros sites",
+      "de carbono por visita",
+      "Energia sustentável",
+      "Energia suja",
+      "ainda não foi analisado"
+    ],
+    "learnMore": "Saiba mais",
+    "banner": [
+      "Estamos construindo uma Web melhor",
+      "Buscas mais produtivas e saudáveis"
+    ],
+    "copyright": "Findto é um assistente para busca descentralizada na web com impacto positivo. Todos os direitos reservados às marcas registradas e fontes externas. Criado por"
+  }
+}

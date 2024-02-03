@@ -1,0 +1,160 @@
+.header {
+  position: relative;
+  width: 100%;
+  padding: 0 2rem;
+  height: 4rem;
+  z-index: 99999;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: var(--color-white);
+}
+.header div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.logo {
+  display: flex;
+  height: 3rem;
+  font-size: var(--font-size-3);
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.buttonMenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  font-size: 0;
+  background: transparent;
+  z-index: 9;
+  border-radius: var(--radius);
+  border: none;
+}
+.buttonMenu:hover,
+.buttonMenu:focus {
+  background-color: var(--color-white);
+}
+
+.hamburger {
+  position: relative;
+  width: 22px;
+  height: 3px;
+  background: var(--color-black);
+  transition: all 0.25s ease;
+  border-radius: var(--radius);
+}
+.hamburger:before,
+.hamburger:after {
+  content: '';
+  position: absolute;
+  display: block;
+  right: 0;
+  width: 22px;
+  height: 3px;
+  background: var(--color-black);
+  z-index: 1;
+  transition: all 0.25s ease;
+  border-radius: var(--radius);
+}
+.hamburger:before {
+  top: -6px;
+}
+.hamburger:after {
+  top: 6px;
+}
+
+.openMenu .hamburger {
+  transform: rotate(45deg);
+}
+.openMenu .hamburger:before,
+.openMenu .hamburger:after {
+  top: 0;
+  width: 22px;
+  transform: rotate(90deg);
+}
+
+.layer {
+  position: fixed;
+  background: rgb(0 0 0 / 50%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  backface-visibility: hidden;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.25s cubic-bezier(0, 0, 0.3, 1);
+}
+.layerActive {
+  visibility: visible;
+  opacity: 1;
+  animation: fade 0.25s ease;
+}
+.removeScroll {
+  overflow: hidden;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.nav {
+  height: 100%;
+  width: 350px;
+  background: var(--color-white);
+  position: fixed;
+  left: 0;
+  top: 0;
+  text-align: center;
+  transition: all var(--navDrawerDurationEnterMS) var(--easingDecelerate);
+  transform: translateX(50%);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 3;
+}
+.openNav {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: var(--color-w);
+}
+.nav ul li {
+  padding: 0;
+}
+.nav ul li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 4vw;
+  color: var(--color-b);
+}
+.nav ul li a:hover,
+.nav ul li a:focus {
+  background: var(--color-y);
+}
