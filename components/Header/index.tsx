@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Style from './Header.module.css'
 import Button from '../Button'
 import ImageIcon from '../ImageIcon'
+import { IconCoffee, IconGitHub } from '../SvgIcons'
 
 export default function Header() {
   const [isActive, setActive] = useState<boolean>(false)
@@ -36,21 +37,27 @@ export default function Header() {
         </button>
 
         <Link href="/" className={Style.logo}>
-          <ImageIcon src={'check'} width={32} height={32} /> CheckTest
+          {/* <ImageIcon src={'check'} width={32} height={32} /> */}
+          CheckTest.dev
         </Link>
       </div>
 
       <div>
-        <Button type="link" href="#start">
-          Make a donation <ImageIcon src={'heart'} width={18} height={18} />
-        </Button>
-
         <Button
           type="link"
           target="external"
           href="https://github.com/lucasm/checktest"
         >
-          Star on GitHub <ImageIcon src={'star'} width={18} height={18} />
+          <IconGitHub />
+        </Button>
+
+        <Button
+          type="link"
+          target="external"
+          href="https://buymeacoffee.com/lucasm"
+        >
+          <IconCoffee />
+          Buy me a coffee
         </Button>
       </div>
 

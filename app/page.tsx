@@ -9,17 +9,19 @@ export default function PageHome() {
 
       <main>
         <section>
-          <h1>Test your web application in one place</h1>
-          <p>Test your web app on many ways</p>
+          <div className="container home">
+            <h1>A place to test web sites & apps</h1>
+            <p>Get reports from the top test checking services.</p>
 
-          <Button type="link" href="#start">
-            Get started
-          </Button>
+            <Button type="link" href="#start">
+              Get started
+            </Button>
+          </div>
         </section>
 
-        <section>
+        <section id="start">
           <div className="container">
-            <h2>What test do you want to do?</h2>
+            <h2>Most popular tests</h2>
 
             <Links />
           </div>
@@ -27,7 +29,11 @@ export default function PageHome() {
 
         <section>
           <div className="container">
-            <h2>What's people are saying </h2>
+            <h2>What's people are saying</h2>
+
+            <Button type="link" href="#">
+              Post #CheckTestDev on X
+            </Button>
           </div>
         </section>
       </main>

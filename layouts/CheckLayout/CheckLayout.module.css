@@ -1,0 +1,27 @@
+.layoutCheck {
+  padding: 1rem 2rem 3rem;
+  background: var(--color-green-translucent);
+}
+.layoutCheck div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 1rem;
+  margin: 0 auto;
+  max-width: var(--max-width-md);
+}
+.layoutCheck figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-white);
+  border-radius: var(--border-radius-full);
+  width: 4rem;
+  height: 4rem;
+}
+.layoutCheck figure svg {
+  width: 2rem;
+  height: 2rem;
+  stroke-width: 0.25;
+}

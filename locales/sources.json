@@ -1,40 +1,468 @@
 {
   "categories": [
     {
-      "id": "domain_info",
-      "title": "Domain register",
+      "url": "domain-info",
+      "title": "Domain info",
       "active": true,
-      "data": [
+      "subcategories": [
         {
-          "name": "W3Techs",
-          "action": "https://w3techs.com/sites/info/",
-          "protocol": false
+          "title": "WHOIS ownership",
+          "services": [
+            {
+              "name": "Who.is",
+              "url": "https://who.is/whois/"
+            },
+            {
+              "name": "Whois.com",
+              "url": "https://www.whois.com/whois/"
+            },
+            {
+              "name": "Godaddy WHOIS",
+              "url": "https://godaddy.com/whois/results.aspx?domain="
+            },
+            {
+              "name": "DomainTools.com WHOIS",
+              "url": "https://whois.domaintools.com/"
+            },
+            {
+              "name": "IANA WHOIS",
+              "url": "https://www.iana.org/whois?q="
+            },
+            {
+              "name": "ICANN WHOIS",
+              "url": "https://lookup.icann.org/whois/en?q="
+            }
+          ]
+        },
+        {
+          "title": "DNS records",
+          "services": [
+            {
+              "name": "NsLookup DNS Propagation",
+              "url": "https://www.nslookup.io/domains/lucasm.dev/dns-propagation/a/"
+            },
+            {
+              "name": "DNSChecker.org",
+              "url": "https://dnschecker.org/all-dns-records-of-domain.php?query="
+            }
+          ]
+        },
+        {
+          "title": "IP addresses",
+          "services": [
+            {
+              "name": "NsLookup IP Address",
+              "url": "https://www.nslookup.io/domains/"
+            },
+            {
+              "name": "Atatus Find IP Address",
+              "url": "https://www.atatus.com/tools/find-ip-address#domainname="
+            }
+          ]
+        },
+        {
+          "title": "Register",
+          "services": [
+            {
+              "name": "GoDaddy",
+              "url": "https://www.godaddy.com/domains/domain-name-search"
+            },
+            {
+              "name": "Namecheap",
+              "url": "https://www.namecheap.com/domains/registration/results/?domain="
+            },
+            {
+              "name": "Cloudlfare",
+              "url": "https://www.cloudflare.com/products/registrar/"
+            },
+            {
+              "name": "Bluehost",
+              "url": "https://www.bluehost.com/domains"
+            },
+            {
+              "name": "HostGator",
+              "url": "https://www.hostgator.com/domains"
+            },
+            {
+              "name": "Domain.com",
+              "url": "https://www.domain.com/domains/search"
+            }
+          ]
         }
       ]
     },
     {
-      "id": "domain_info",
-      "title": "Domain register",
+      "url": "security",
+      "title": "Security",
       "active": true,
-      "data": [
+      "subcategories": [
         {
-          "name": "PWABuilder",
-          "action": "https://www.pwabuilder.com/reportcard?site=",
-          "protocol": true
+          "title": "Malware",
+          "services": [
+            {
+              "name": "Google Safe Browsing",
+              "url": "https://transparencyreport.google.com/safe-browsing/search?url="
+            },
+            {
+              "name": "Sucuri SiteCheck",
+              "url": "https://sitecheck.sucuri.net/results/"
+            },
+            {
+              "name": "VirusTotal",
+              "url": "https://www.virustotal.com/gui/domain/"
+            },
+            {
+              "name": "URLVoid",
+              "url": "https://www.urlvoid.com/scan/"
+            },
+            {
+              "name": "Quttera",
+              "url": "https://quttera.com/detailed_report/"
+            }
+          ]
+        },
+        {
+          "title": "HTTP Headers",
+          "services": [
+            {
+              "name": "SecurityHeaders.com",
+              "url": "https://securityheaders.com/?q="
+            },
+            {
+              "name": "Google CSP Evaluator",
+              "url": "https://csp-evaluator.withgoogle.com/"
+            },
+            {
+              "name": "Mozilla Observatory",
+              "url": "https://observatory.mozilla.org/analyze/"
+            }
+          ]
+        },
+        {
+          "title": "SSL Certificate",
+          "services": [
+            {
+              "name": "SSL Labs",
+              "url": "https://www.ssllabs.com/ssltest/analyze.html?d="
+            },
+            {
+              "name": "DigiCert SSL Installation Checker",
+              "url": "https://www.digicert.com/help/"
+            }
+          ]
+        },
+        {
+          "title": "Subresource Integrity",
+          "services": [
+            {
+              "name": "SRI Hash Generator",
+              "url": "https://www.srihash.org/"
+            }
+          ]
+        },
+        {
+          "title": "HSTS Preload",
+          "services": [
+            {
+              "name": "HSTS Preload List Submission",
+              "url": "https://hstspreload.org/"
+            }
+          ]
+        },
+        {
+          "title": "CORS Policy",
+          "services": [
+            {
+              "name": "CORS Policy Tester",
+              "url": "https://www.test-cors.org/"
+            }
+          ]
         }
       ]
     },
     {
-      "id": "pwa",
+      "url": "performance",
+      "title": "Performance",
+      "active": true,
+      "subcategories": [
+        {
+          "title": "Load time and speed",
+          "services": [
+            {
+              "name": "Google PageSpeed Insights",
+              "url": "https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fglobo.com%2F"
+            },
+            {
+              "name": "GTmetrix",
+              "url": "https://gtmetrix.com/reports/"
+            },
+            {
+              "name": "WebPageTest.org",
+              "url": "https://www.webpagetest.org/result/"
+            },
+            {
+              "name": "Pingdom Website Speed Test",
+              "url": "https://tools.pingdom.com/"
+            }
+          ]
+        },
+        {
+          "title": "Resources size",
+          "services": [
+            {
+              "name": "SEOptimer Webpage Size",
+              "url": "https://www.seoptimer.com/web-page-size-check/"
+            },
+            {
+              "name": "DebugBear HTML Size Analyzer",
+              "url": "https://www.debugbear.com/html-size-analyzer?url="
+            },
+            {
+              "name": "ImageOptim",
+              "url": "https://imageoptim.com/"
+            },
+            {
+              "name": "TinyPNG",
+              "url": "https://tinypng.com/"
+            },
+            {
+              "name": "SVGOMG",
+              "url": "https://jakearchibald.github.io/svgomg/"
+            },
+            {
+              "name": "Squoosh",
+              "url": "https://squoosh.app/"
+            }
+          ]
+        },
+        {
+          "title": "Server ping",
+          "services": [
+            {
+              "name": "CheckHost.net",
+              "url": "https://check-host.net/check-ping?host="
+            },
+            {
+              "name": "Atatus",
+              "url": "https://www.atatus.com/tools/ping#domainname="
+            }
+          ]
+        },
+        {
+          "title": "Browser Resource Hint and compression",
+          "services": [
+            {
+              "name": "Google Search Console",
+              "url": "https://search.google.com/search-console/core-web-vitals?resource_id="
+            },
+            {
+              "name": "Calibre",
+              "url": "https://calibreapp.com/tools/core-web-vitals-checker/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "ux-accessibility",
+      "title": "UX and Accessibility",
+      "active": true,
+      "subcategories": [
+        {
+          "title": "Accessibility",
+          "services": [
+            {
+              "name": "WAVE Web Accessibility Evaluation Tool",
+              "url": "https://wave.webaim.org/report#/"
+            },
+            {
+              "name": "Axe by Deque",
+              "url": "https://www.deque.com/axe/devtools/"
+            },
+            {
+              "name": "Lighthouse by Google",
+              "url": "https://developers.google.com/web/tools/lighthouse"
+            }
+          ]
+        },
+        {
+          "title": "Mobile-friendliness",
+          "services": [
+            {
+              "name": "Google Mobile-Friendly Test",
+              "url": "https://search.google.com/test/mobile-friendly?url="
+            },
+            {
+              "name": "Bing Mobile Friendliness Test",
+              "url": "https://www.bing.com/webmaster/tools/mobile-friendliness?url="
+            }
+          ]
+        },
+        {
+          "title": "Color contrast",
+          "services": [
+            {
+              "name": "Color Contrast Checker",
+              "url": "https://webaim.org/resources/contrastchecker/"
+            }
+          ]
+        },
+        {
+          "title": "Typography",
+          "services": [
+            {
+              "name": "Type Scale",
+              "url": "https://type-scale.com/"
+            }
+          ]
+        },
+        {
+          "title": "Responsive design",
+          "services": [
+            {
+              "name": "Responsive Design Checker",
+              "url": "https://responsivedesignchecker.com/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "technology",
+      "title": "Technology",
+      "active": true,
+      "subcategories": [
+        {
+          "services": [
+            {
+              "name": "BuiltWith",
+              "url": "https://builtwith.com/"
+            },
+            {
+              "name": "Wappalyzer",
+              "url": "https://www.wappalyzer.com/lookup/"
+            },
+            {
+              "name": "W3Techs",
+              "url": "https://w3techs.com/sites/info/"
+            },
+            {
+              "name": "WhatCMS.org",
+              "url": "https://whatcms.org/"
+            },
+            {
+              "name": "WebTechSurvey",
+              "url": "https://webtechsurvey.com/website/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "seo",
+      "title": "SEO",
+      "active": true
+    },
+    {
+      "url": "market-analysis",
+      "title": "Traffic & Market Share",
+      "active": true
+    },
+    {
+      "url": "compliance",
+      "title": "Privacy Compliance",
+      "active": true,
+      "subcategories": [
+        {
+          "services": [
+            {
+              "name": "Cookiebot",
+              "url": "https://www.cookiebot.com/"
+            },
+            {
+              "name": "OneTrust",
+              "url": "https://www.onetrust.com/"
+            },
+            {
+              "name": "TrustArc",
+              "url": "https://www.trustarc.com/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "carbon-footprint",
+      "title": "Carbon footprint",
+      "active": true,
+      "subcategories": [
+        {
+          "services": [
+            {
+              "name": "Website Carbon",
+              "url": "https://www.websitecarbon.com/website/"
+            },
+            {
+              "name": "GreenPixie",
+              "url": "https://greenpixie.com/sites/"
+            },
+            {
+              "name": "EcoPing",
+              "url": "https://www.ecoping.com/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "pwa-progressive-web-app",
       "title": "PWA",
       "active": true,
-      "data": [
+      "subcategories": [
         {
-          "name": "PWABuilder",
-          "action": "https://www.pwabuilder.com/reportcard?site=",
-          "protocol": true
+          "services": [
+            {
+              "name": "PWA Builder by Microsoft",
+              "url": "https://www.pwabuilder.com/reportcard?site=",
+              "protocol": true
+            },
+            {
+              "name": "Lighthouse by Google",
+              "url": "https://developers.google.com/web/tools/lighthouse",
+              "unavailable": true
+            },
+            {
+              "name": "PWA Testing by SEOReviewTools",
+              "url": "https://www.seoreviewtools.com/pwa-testing-tool/"
+            }
+          ]
         }
       ]
+    },
+    {
+      "url": "status-uptime",
+      "title": "Availability status",
+      "active": true
+    },
+    {
+      "url": "broken-links",
+      "title": "Broken links",
+      "active": true
+    },
+    {
+      "url": "ai-content-detection",
+      "title": "AI-generated content",
+      "active": true
+    },
+    {
+      "url": "url-redirect",
+      "title": "URL redirects",
+      "active": true
+    },
+    {
+      "url": "archive-versions",
+      "title": "Archive",
+      "active": true
     }
   ]
 }
