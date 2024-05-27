@@ -1,0 +1,11 @@
+.footer {
+  position: relative;
+  padding: 2rem 0;
+  text-align: center;
+  width: 100%;
+}
+
+.footerContainer {
+  display: flex;
+  gap: 2rem;
+}

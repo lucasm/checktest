@@ -41,7 +41,7 @@ export const CATEGORIES: Categories = {
     id: 'security',
     title: 'Security',
     description:
-      'Check website security vulnerabilities and get reports to solve them.',
+      'Check website security and get reports to solve vulnerabilities.',
     icon: IconShield
   },
   performance: {

@@ -3,6 +3,8 @@ import Button from '@/components/Button'
 import Header from '@/components/Header'
 import CookiesPopup from '@/components/CookiesPopup'
 import AnimatedShapes from '@/components/SvgAnimatedShapes'
+import Footer from '@/components/Footer'
+import { IconCoffee, IconX } from '@/components/SvgIcons'
 
 export default function PageHome() {
   return (
@@ -35,7 +37,7 @@ export default function PageHome() {
 
         <section>
           <div className="container">
-            <h2>What's people are saying</h2>
+            <h2>What's community are saying</h2>
 
             <Button
               type="link"
@@ -43,7 +45,8 @@ export default function PageHome() {
               href="
             https://twitter.com/intent/tweet?text=Post%20%23CheckTestDev%20on%20X%20https%3A%2F%2Fchecktest.dev%2F%20%40lucasmenezes&source=checktest.dev"
             >
-              Post #CheckTestDev on X
+              <IconX />
+              Post @CheckTestDev
             </Button>
           </div>
         </section>
@@ -53,19 +56,10 @@ export default function PageHome() {
             <h2>Open source</h2>
 
             <p>
-              Someday I thought, why don't we developers have a single place to
-              test our production web applications? So, I decided to create
-              CheckTest.dev, a place where you can easily test your web
-              applications and get reports from the leading testing services.
-              CheckTest.dev is fully open source. Help keep this project active
-              by donating. —{' '}
-              <a
-                href="https://lucasm.dev?utm_source=checktest.dev&utm_medium=footer&utm_campaign=checktest.dev"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Lucas Menezes
-              </a>
+              Someday I wake up and decided to create CheckTest.dev to became a
+              place to Developers easily test Web Apps, get reports from the
+              leading testing services and learning resources from the
+              community. Help keep this project active by donating!
             </p>
 
             <Button
@@ -73,13 +67,15 @@ export default function PageHome() {
               target="external"
               href="https://buymeacoffee.com/lucasm"
             >
-              Buy me a coffee
+              <IconCoffee />
+              Buy Me a Coffee
             </Button>
           </div>
         </section>
       </main>
 
       <CookiesPopup />
+      <Footer />
     </>
   )
 }

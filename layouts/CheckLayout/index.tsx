@@ -1,4 +1,5 @@
 import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 import InputUrl from '@/components/InputUrl'
 import Style from './CheckLayout.module.css'
 import { Category } from '@/routes/categories'
@@ -19,6 +20,8 @@ export default function CheckLayout({ category, children }: PropsCheckLayout) {
           <div className="container">{children}</div>
         </div>
       </div>
+
+      <Footer />
     </>
   )
 }

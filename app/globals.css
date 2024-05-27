@@ -5,7 +5,7 @@
   --font-size-3: 1.5rem;
   --font-size-4: 1rem;
   --font-size-5: 1.2rem;
-  --font-weight-bold: 500;
+  --font-weight-bold: 550;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
@@ -122,14 +122,25 @@ section {
   padding: 4rem 2rem;
 }
 
+article {
+  text-align: left;
+  padding: 2rem;
+}
 article h1,
 article h2,
-article h3,
+article h3 {
+  margin-top: 3rem;
+}
 article p {
-  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+}
+article ul {
+  margin-top: 2rem;
+  padding-left: 1rem;
 }
 article ul li {
-  margin-bottom: 0.5rem;
+  font-size: var(--font-size-5);
+  margin-bottom: 0.75rem;
 }
 
 .svg {
