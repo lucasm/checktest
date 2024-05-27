@@ -110,12 +110,12 @@
               "url": "https://www.virustotal.com/gui/domain/"
             },
             {
-              "name": "URLVoid",
-              "url": "https://www.urlvoid.com/scan/"
-            },
-            {
               "name": "Quttera",
               "url": "https://quttera.com/detailed_report/"
+            },
+            {
+              "name": "URLVoid",
+              "url": "https://www.urlvoid.com/scan/"
             }
           ]
         },
@@ -123,7 +123,7 @@
           "title": "HTTP Headers",
           "services": [
             {
-              "name": "Security Headers",
+              "name": "SecurityHeaders.com",
               "url": "https://securityheaders.com/?q="
             },
             {
@@ -144,7 +144,7 @@
               "url": "https://www.ssllabs.com/ssltest/analyze.html?d="
             },
             {
-              "name": "DigiCert SSL Installation Checker",
+              "name": "DigiCert SSL",
               "url": "https://www.digicert.com/help/"
             }
           ]
@@ -162,8 +162,8 @@
           "title": "HSTS Preload",
           "services": [
             {
-              "name": "HSTS Preload List Submission",
-              "url": "https://hstspreload.org/"
+              "name": "HSTSPreload.org",
+              "url": "https://hstspreload.org/?domain="
             }
           ]
         },
@@ -171,8 +171,9 @@
           "title": "CORS Policy",
           "services": [
             {
-              "name": "CORS Policy Tester",
-              "url": "https://www.test-cors.org/"
+              "name": "CORS Tester",
+              "url": "https://cors-test.codehappy.dev/?url=",
+              "encode": true
             }
           ]
         }
@@ -198,7 +199,7 @@
               "url": "https://gtmetrix.com/reports/"
             },
             {
-              "name": "Pingdom Website Speed Test",
+              "name": "Pingdom",
               "url": "https://tools.pingdom.com/"
             }
           ]
@@ -266,7 +267,7 @@
           "title": "Core Web Vitals",
           "services": [
             {
-              "name": "Google PageSpeed Insights",
+              "name": "Google PageSpeed",
               "url": "https://pagespeed.web.dev/analysis/?url=https%3A%2F%2Fglobo.com%2F"
             },
             {
@@ -287,7 +288,7 @@
               "url": "https://www.accessibilitychecker.org/audit/?website="
             },
             {
-              "name": "WAVE Web Accessibility",
+              "name": "WAVE",
               "url": "https://wave.webaim.org/report#/"
             },
             {
