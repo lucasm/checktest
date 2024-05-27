@@ -1,0 +1,33 @@
+.cookiesPopup {
+  position: fixed;
+  display: flex;
+  gap: 1rem;
+  bottom: calc(-8rem);
+  right: 1rem;
+  background: var(--color-black);
+  border-radius: var(--radius);
+  color: var(--color-white);
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.5s ease-in-out;
+  z-index: 1000;
+  align-items: center;
+  flex-direction: column;
+}
+
+.slideUp {
+  transform: translateY(-100%);
+}
+.slideDown {
+  transform: translateY(100%);
+}
+
+.cookiesPopup button {
+  background: var(--color-green-translucent);
+  color: var(--color-black);
+  border: none;
+  padding: 10px 20px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-weight: var(--font-weight-bold);
+}

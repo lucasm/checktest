@@ -1,6 +1,6 @@
 .InputUrl {
-  /* background: var(--color-green-translucent); */
-  padding-top: 3rem;
+  /* background: yellow; */
+  width: 100%;
 }
 .InputUrl div {
   display: flex;
@@ -8,25 +8,30 @@
   align-items: center;
   gap: 1rem;
   margin: 0 auto;
-  max-width: var(--max-width-md);
+  flex-direction: column;
 }
 
 .InputUrl a {
-  padding: 0.9rem 2rem;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  padding: 0 2rem;
+  height: 3.25rem;
   color: var(--color-white);
   background: var(--color-black);
-  border-radius: var(--border-radius);
-  font-size: var(--font-size-4);
+  border-radius: 20rem;
+  font-size: var(--font-size-5);
 }
 
 .InputUrl input {
   width: 100%;
-  padding: 0.9rem 1.5rem;
-  border: 1px solid var(--color-grey);
+  padding: 0 1.5rem;
+  height: 3.25rem;
+  border: 2px solid var(--color-white);
   background: var(--color-white);
-  border-radius: var(--border-radius);
+  border-radius: 20rem;
   transition: var(--transition);
-  font-size: var(--font-size-4);
+  font-size: var(--font-size-5);
 }
 .InputUrl input:focus,
 .InputUrl input:hover {
@@ -38,7 +43,7 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  margin: 3rem auto;
+  margin: 0 auto;
   text-align: left;
   max-width: var(--max-width-md);
 }
@@ -46,28 +51,34 @@
   margin-bottom: 1.5rem;
 }
 .servicesContainer h2 {
-  margin: 1.25rem 0 1rem;
+  margin-bottom: 1rem;
   font-size: var(--font-size-3);
+  width: 100%;
 }
 
 .radioContainer {
-  display: inline-block;
   position: relative;
-  margin-right: 0.5rem;
-  margin-bottom: 0.5rem;
+  display: inline-flex;
+  gap: 0rem;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .radioButton {
+  position: relative;
   appearance: none;
   border: 1px solid transparent;
   background: var(--color-gray);
   color: var(--color-black);
-  padding: 0 0.75rem;
+  padding: 0 1rem;
   height: 2rem;
   font-size: var(--font-size-4);
   border-radius: var(--border-radius-full);
   transition: var(--transition);
-  box-shadow: 0 0 0 1px var(rgba(0, 0, 0, 0.08), transparent);
+  text-transform: uppercase;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .radioButton:hover {
   border-color: var(--color-black);
@@ -77,10 +88,11 @@
   color: var(--color-white);
   background: var(--color-black);
   border-color: transparent;
-  /* padding-left: 2rem; */
+  padding-left: 2.5rem;
 }
 
-.checkmark {
+.radioButton.selected::after {
+  content: '';
   position: absolute;
   top: 50%;
   left: 1rem;
@@ -89,9 +101,44 @@
   width: 10px;
   background: var(--color-green-translucent);
   border-radius: 50%;
-  display: none;
+  display: block;
 }
 
-.radioButton.selected ~ .checkmark {
-  display: block;
+.containerDescription {
+  display: grid;
+  grid-template-columns: 3.5rem 1fr;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 3rem;
+}
+.containerDescription figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-white);
+  border-radius: var(--border-radius-full);
+  width: 3.25rem;
+  height: 3.25rem;
+}
+.containerDescription figure svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: none;
+  stroke-width: 0.5;
+  stroke: currentcolor;
+}
+.containerDescription p {
+  font-size: var(--font-size-4);
+}
+
+@media screen and (min-width: 900px) {
+  .radioButton {
+    height: 2.5rem;
+  }
+  .containerDescription {
+    grid-template-columns: 4rem 1fr;
+  }
+  .containerDescription p {
+    font-size: var(--font-size-5);
+  }
 }

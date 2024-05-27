@@ -5,15 +5,15 @@
   justify-content: center;
   position: relative;
   margin: 0;
-  padding: 1rem 2.5rem;
+  padding: 1.25rem 2.5rem;
   color: var(--color-black);
   background: var(--color-green-translucent);
   border: none;
   border-radius: 50rem;
-  font-size: var(--font-size-6);
-  font-weight: 700;
+  font-size: var(--font-size-5);
+  font-weight: var(--font-weight-bold);
   transition: var(--transition);
-  box-shadow: var(--box-shadow);
+  /* box-shadow: var(--box-shadow); */
 }
 .button:hover,
 .button:focus {

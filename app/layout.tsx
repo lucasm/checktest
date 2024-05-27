@@ -6,7 +6,11 @@ import { UserContextProvider } from '../contexts/UserContext'
 const inter = Work_Sans({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'CheckTest',
+  title: {
+    absolute: 'CheckTest',
+    default: 'CheckTest',
+    template: '%s | CheckTest'
+  },
   description: 'Open source tool to audit URLs and get reports'
 }
 

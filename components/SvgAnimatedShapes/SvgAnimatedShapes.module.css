@@ -1,0 +1,109 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: var(--color-white); */
+  border-radius: var(--radius);
+}
+
+.svg {
+  width: 100%;
+  height: 100%;
+}
+
+.rectangle {
+  fill: var(--color-black);
+  animation: transformView 8s infinite alternate;
+  transform-origin: center;
+}
+
+.logo {
+  fill: var(--color-green-translucent);
+  animation: transformLogo 8s infinite alternate;
+  transform-origin: center;
+}
+
+.content {
+  fill: var(--color-green-translucent);
+  animation: transformContent 8s infinite alternate;
+  transform-origin: center;
+}
+
+.triangle {
+  fill: var(--color-black);
+  opacity: 1;
+  animation: showTriangle 8s infinite alternate;
+}
+
+.circle {
+  fill: var(--color-black);
+  opacity: 0;
+  animation: showCircle 8s infinite alternate;
+}
+
+@keyframes transformView {
+  0% {
+    x: 250px;
+    y: 75px;
+    width: 100px;
+    height: 150px;
+  }
+  100% {
+    x: 100px;
+    y: 50px;
+    width: 400px;
+    height: 200px;
+  }
+}
+
+@keyframes transformLogo {
+  0% {
+    x: 270px;
+    y: 90px;
+    width: 60px;
+    height: 20px;
+  }
+  100% {
+    x: 130px;
+    y: 70px;
+    width: 80px;
+    height: 40px;
+  }
+}
+
+@keyframes transformContent {
+  0% {
+    x: 260px;
+    y: 120px;
+    width: 80px;
+    height: 100px;
+  }
+  100% {
+    x: 220px;
+    y: 120px;
+    width: 200px;
+    height: 100px;
+  }
+}
+
+@keyframes showTriangle {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes showCircle {
+  0%,
+  50% {
+    opacity: 0;
+  }
+  51%,
+  100% {
+    opacity: 1;
+  }
+}

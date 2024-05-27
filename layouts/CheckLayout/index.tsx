@@ -1,36 +1,24 @@
-'use client'
-
 import Header from '@/components/Header'
 import InputUrl from '@/components/InputUrl'
 import Style from './CheckLayout.module.css'
-import { getIcon } from '@/components/Links'
+import { Category } from '@/routes/categories'
 
-export default function CheckLayout({
-  children,
-  title,
-  description,
-  category
-}: {
-  children: React.ReactNode
-  title: string
-  description: string
-  category: string
-}) {
+interface PropsCheckLayout {
+  category: Category
+  children?: React.ReactNode
+}
+
+export default function CheckLayout({ category, children }: PropsCheckLayout) {
   return (
     <>
       <Header />
-
-      <div className={Style.layoutCheck}>
-        <div>
-          <figure>{getIcon(category)}</figure>
-          <h1>{title}</h1>
-          <p>{description}</p>
-        </div>
-      </div>
-
       <InputUrl category={category} />
 
-      {children}
+      <div className={Style.layoutCheck}>
+        <div className={Style.layoutCheckHeader}>
+          <div className="container">{children}</div>
+        </div>
+      </div>
     </>
   )
 }

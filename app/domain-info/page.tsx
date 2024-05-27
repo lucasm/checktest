@@ -1,19 +1,14 @@
 import CheckLayout from '@/layouts/CheckLayout'
+import { CATEGORIES } from '@/routes/categories'
 import type { Metadata } from 'next'
 
-const title = 'Domain info'
-const description =
-  'Check domain availability, WHOIS ownership, DNS records and IP address.'
+const category = CATEGORIES['domain-info']
 
 export const metadata: Metadata = {
-  title: title + ' - CheckTest',
-  description: description
+  title: category.title,
+  description: category.description
 }
 
 export default function PageDomainInfo() {
-  return (
-    <CheckLayout title={title} description={description} category="domain-info">
-      <section></section>
-    </CheckLayout>
-  )
+  return <CheckLayout category={category} />
 }

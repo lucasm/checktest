@@ -1,15 +1,19 @@
 .layoutCheck {
-  padding: 1rem 2rem 3rem;
-  background: var(--color-green-translucent);
+  width: 100%;
+  margin: 0 auto 1.5rem;
+  padding: 0 1.5rem;
+  max-width: var(--max-width-full);
 }
-.layoutCheck div {
+.layoutCheckHeader {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
   gap: 1rem;
   margin: 0 auto;
-  max-width: var(--max-width-md);
+  padding: 6vw;
+  background: var(--color-grey);
+  border-radius: var(--radius);
 }
 .layoutCheck figure {
   display: flex;
@@ -19,9 +23,12 @@
   border-radius: var(--border-radius-full);
   width: 4rem;
   height: 4rem;
+  margin-bottom: 1rem;
 }
 .layoutCheck figure svg {
   width: 2rem;
   height: 2rem;
+  fill: none;
   stroke-width: 0.25;
+  stroke: currentcolor;
 }

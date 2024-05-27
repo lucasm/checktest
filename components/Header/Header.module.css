@@ -1,9 +1,8 @@
 .header {
   position: relative;
   width: 100%;
-  padding: 0 2rem;
+  padding: 0 0.5rem;
   height: 4rem;
-  z-index: 99999;
   justify-content: space-between;
   display: flex;
   flex-direction: row;
@@ -21,7 +20,7 @@
   display: flex;
   height: 3rem;
   font-size: var(--font-size-3);
-  font-weight: 600;
+  font-weight: var(--font-weight-bold);
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
@@ -35,7 +34,7 @@
   height: 3rem;
   font-size: 0;
   background: transparent;
-  z-index: 9;
+  z-index: 999;
   border-radius: var(--radius);
   border: none;
 }
@@ -46,7 +45,7 @@
 
 .hamburger {
   position: relative;
-  width: 22px;
+  width: 20px;
   height: 3px;
   background: var(--color-black);
   transition: all 0.25s ease;
@@ -58,10 +57,10 @@
   position: absolute;
   display: block;
   right: 0;
-  width: 22px;
+  width: 20px;
   height: 3px;
   background: var(--color-black);
-  z-index: 1;
+
   transition: all 0.25s ease;
   border-radius: var(--radius);
 }
@@ -78,7 +77,7 @@
 .openMenu .hamburger:before,
 .openMenu .hamburger:after {
   top: 0;
-  width: 22px;
+  width: 20px;
   transform: rotate(90deg);
 }
 
@@ -116,18 +115,18 @@
 }
 
 .nav {
-  height: 100%;
-  width: 350px;
-  background: var(--color-white);
   position: fixed;
+  height: 100%;
+  width: 320px;
+  background: var(--color-white);
   left: 0;
   top: 0;
-  text-align: center;
   transition: all var(--navDrawerDurationEnterMS) var(--easingDecelerate);
   transform: translateX(50%);
   visibility: hidden;
   opacity: 0;
   z-index: 3;
+  overflow: auto;
 }
 .openNav {
   visibility: visible;
@@ -137,24 +136,71 @@
 .nav ul {
   list-style: none;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin: 0;
+  margin: 4rem auto 0;
   padding: 0;
   height: 100%;
   background: var(--color-w);
+  flex-wrap: wrap;
 }
 .nav ul li {
   padding: 0;
+  width: 100%;
+}
+.nav ul li:last-of-type {
+  margin-bottom: 4rem;
 }
 .nav ul li a {
   position: relative;
   display: flex;
-  justify-content: center;
-  padding: 1rem 4vw;
+  padding: 1rem 1.25rem;
   color: var(--color-b);
+  width: 100%;
+  gap: 1.5rem;
+  text-align: left;
+  font-size: var(--font-size-4);
+  align-items: center;
 }
 .nav ul li a:hover,
 .nav ul li a:focus {
-  background: var(--color-y);
+  background: var(--color-grey);
+}
+.nav ul li a figure {
+  font-size: 0;
+}
+.nav ul li a svg {
+  stroke-width: 0.3;
+  stroke: currentcolor;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.headerButtons {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-right: 1rem;
+}
+.headerButtons a {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  font-size: 0;
+  gap: 0;
+}
+
+@media screen and (min-width: 900px) {
+  .header {
+    height: 4.5rem;
+    padding: 0 1.5rem;
+  }
+  .nav ul li a {
+    padding: 1rem 2.25rem;
+  }
+  .headerButtons {
+    gap: 2rem;
+  }
+  .headerButtons a {
+    gap: 0.5rem;
+    font-size: var(--font-size-4);
+  }
 }

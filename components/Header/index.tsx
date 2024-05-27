@@ -5,7 +5,8 @@ import Link from 'next/link'
 import Style from './Header.module.css'
 import Button from '../Button'
 import ImageIcon from '../ImageIcon'
-import { IconCoffee, IconGitHub } from '../SvgIcons'
+import { IconCoffee, IconGitHub, IconHome } from '../SvgIcons'
+import { CATEGORIES } from '@/routes/categories'
 
 export default function Header() {
   const [isActive, setActive] = useState<boolean>(false)
@@ -36,19 +37,20 @@ export default function Header() {
           Menu <div className={Style.hamburger}></div>
         </button>
 
-        <Link href="/" className={Style.logo}>
+        <Link href="/" className={Style.logo} translate="no">
           {/* <ImageIcon src={'check'} width={32} height={32} /> */}
-          CheckTest.dev
+          CheckTest
         </Link>
       </div>
 
-      <div>
+      <div className={Style.headerButtons}>
         <Button
           type="link"
           target="external"
           href="https://github.com/lucasm/checktest"
         >
           <IconGitHub />
+          Star on GitHub
         </Button>
 
         <Button
@@ -57,39 +59,43 @@ export default function Header() {
           href="https://buymeacoffee.com/lucasm"
         >
           <IconCoffee />
-          Buy me a coffee
+          Buy Me a Coffee
         </Button>
       </div>
 
-      <nav className={isActive ? Style.nav + ' ' + Style.openNav : Style.nav}>
-        <ul>
-          <li>
-            <Link href="/domain-info">Domain info</Link>
-          </li>
-          <li>
-            <Link href="/#about" onClick={handleToggle}>
-              About
-            </Link>
-          </li>
-          <li>
-            <Link href="/#work" onClick={handleToggle}>
-              Work
-            </Link>
-          </li>
-          <li>
-            <Link href="/#contact" onClick={handleToggle}>
-              Contact
-            </Link>
-          </li>
-        </ul>
-      </nav>
+      {isActive && (
+        <nav className={isActive ? Style.nav + ' ' + Style.openNav : Style.nav}>
+          <ul>
+            <li>
+              <Link href="/" onClick={handleToggle}>
+                <figure className="icon">{IconHome}</figure>
+                Home
+              </Link>
+            </li>
 
-      <div
-        className={
-          isActive ? Style.layer + ' ' + Style.layerActive : Style.layer
-        }
-        onClick={handleToggle}
-      ></div>
+            {Object.keys(CATEGORIES).map((key) => {
+              const { id, title, icon } = CATEGORIES[key]
+              return (
+                <li key={id}>
+                  <Link href={id} onClick={handleToggle}>
+                    <figure className="icon">{icon}</figure>
+                    {title}
+                  </Link>
+                </li>
+              )
+            })}
+          </ul>
+        </nav>
+      )}
+
+      {isActive && (
+        <div
+          className={
+            isActive ? Style.layer + ' ' + Style.layerActive : Style.layer
+          }
+          onClick={handleToggle}
+        ></div>
+      )}
     </header>
   )
 }

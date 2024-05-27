@@ -1,38 +1,59 @@
-.icons {
+.links {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
-  margin: 3rem 0 0;
+  gap: 1rem;
+  margin: 3rem auto 0;
   width: 100%;
+  max-width: var(--max-width-full);
 }
-.icons a {
-  display: flex;
-  flex-direction: column;
+.links a {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
   align-items: center;
-  gap: 2rem;
-  max-width: 200px;
-  align-items: center;
+  align-content: center;
+  gap: 1.5rem;
   width: 100%;
-  min-height: 200px;
+  /* max-width: 320px;
+  min-height: 180px; */
   padding: 2rem;
-  background: var(--color-white);
+  background: var(--color-gray);
   border-radius: var(--radius);
   transition: all 0.2s;
-  box-shadow: var(--box-shadow);
 }
-.icons a:hover,
-.icons a:focus {
+.links a:hover,
+.links a:focus {
   transform: scale(1.025);
   background: var(--color-green-translucent) !important;
 }
-.icons svg {
-  margin-top: 1rem;
-  width: 3rem;
-  height: 3rem;
+.links svg {
+  width: 2.75rem;
+  height: 2.75rem;
 }
-.icons h2 {
-  font-size: 1.2rem;
-  text-align: left;
+.links h2 {
+  font-size: 1.5rem;
+  /* text-align: left; */
   width: 100%;
+}
+
+@media screen and (min-width: 900px) {
+  .links {
+    gap: 1.5rem;
+  }
+  .links a {
+    gap: 3.5rem;
+    height: 25vw;
+    width: 25vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .links svg {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .links a {
+    height: 20vw;
+    width: 20vw;
+  }
 }

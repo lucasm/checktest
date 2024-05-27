@@ -1,13 +1,14 @@
 import CheckLayout from '@/layouts/CheckLayout'
+import { CATEGORIES } from '@/routes/categories'
+import type { Metadata } from 'next'
+
+const category = CATEGORIES['security']
+
+export const metadata: Metadata = {
+  title: category.title,
+  description: category.description
+}
 
 export default function PageSecurity() {
-  return (
-    <CheckLayout
-      title="Security"
-      description="Check for Malware, HTTP headers, SSL certificates, and security vulnerabilities."
-      category="security"
-    >
-      <section></section>
-    </CheckLayout>
-  )
+  return <CheckLayout category={category} />
 }
