@@ -8,7 +8,6 @@ export default function PageHome() {
   return (
     <>
       <Header />
-      <CookiesPopup />
 
       <main>
         <div className="home">
@@ -79,6 +78,8 @@ export default function PageHome() {
           </div>
         </section>
       </main>
+
+      <CookiesPopup />
     </>
   )
 }
