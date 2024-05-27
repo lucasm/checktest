@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import styles from './CookiesPopup.module.css'
+import Link from 'next/link'
 
 const CookiesPopup = () => {
   const [isVisible, setIsVisible] = useState<boolean>(false)
@@ -34,8 +35,11 @@ const CookiesPopup = () => {
         isVisible ? styles.slideUp : styles.slideDown
       }`}
     >
-      <p>We use Cookies to ensure the best experience!</p>
-      <button onClick={handleAccept}>Ok</button>
+      <p>CheckTest use navigation cookies </p>
+      <div>
+        <button onClick={handleAccept}>Accept</button>
+        <Link href="/privacy">Learn more</Link>
+      </div>
     </div>
   )
 }
