@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Work_Sans } from 'next/font/google'
 import './globals.css'
 import { UserContextProvider } from '../contexts/UserContext'
-import Metrics from './telemetry/index'
+import Telemetry from './telemetry'
 
 const inter = Work_Sans({ subsets: ['latin'] })
 
@@ -25,7 +25,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <UserContextProvider>
           {children}
-          <Metrics />
+          <Telemetry />
         </UserContextProvider>
       </body>
     </html>
