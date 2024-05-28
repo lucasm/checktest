@@ -10,8 +10,7 @@ const Footer = () => {
     <footer className={Style.footer}>
       <div className="container">
         <div className={Style.footerContainer}>
-          <p>
-            {' '}
+          <p translate="no">
             {getYear()} &copy; <Link href="/">CheckTest</Link>.dev
           </p>
           <p>

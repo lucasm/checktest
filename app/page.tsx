@@ -41,7 +41,7 @@ export default function PageHome() {
               type="link"
               target="external"
               href="
-            https://twitter.com/intent/tweet?text=Hello%20friends!%20I%20loved%20how%20%40CheckTestDev%20can%20easily%20test%20web%20apps.%20I%20recommend!%20%23CheckTest"
+            https://twitter.com/intent/tweet?text=Hey%20friends!%20I%20loved%20how%20%40CheckTestDev%20can%20easily%20test%20web%20apps.%20I%20recommend!%20%23CheckTest"
             >
               <IconX />
               Post @CheckTestDev
@@ -56,9 +56,8 @@ export default function PageHome() {
             <p>
               Someday I wake up and decided to create CheckTest.dev to became a
               place to Developers easily test Web Applications, get reports from
-              the leading testing services and learning resources from the
-              community and tech industry. Help keep this project active by
-              donating!
+              the leading testing services and learning resources. Help keep
+              this project active by donating!
             </p>
 
             <Button

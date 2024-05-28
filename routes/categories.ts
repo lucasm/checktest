@@ -47,7 +47,7 @@ export const CATEGORIES: Categories = {
     id: 'performance',
     title: 'Performance',
     description:
-      'Check website speed, load time, and performance optimization suggestions.',
+      'Check website speed, load time, and performance optimization.',
     icon: IconRocket
   },
   'ux-accessibility': {
@@ -60,8 +60,7 @@ export const CATEGORIES: Categories = {
   'code-technology': {
     id: 'code-technology',
     title: 'Code & Technology',
-    description:
-      'Check website technology stack, frameworks, server, CMS, analytics, JavaScript libraries, and more.',
+    description: 'Check website technology stack and code validation.',
     icon: IconCode
   },
   'api-endpoint': {
