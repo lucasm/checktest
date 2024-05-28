@@ -13,10 +13,10 @@ export default function PagePrivacy() {
         <h1>Privacy Policy</h1>
 
         <p>
-          Your privacy is important to us. It is CheckTest's policy to respect
-          your privacy regarding any information we may collect from you across
-          our website, <a href="https://checktest.dev">https://checktest.dev</a>
-          , and other sites we own and operate.
+          Your privacy is important. It is CheckTest's policy to respect your
+          privacy regarding any information we may collect from you across our
+          website, <a href="https://checktest.dev">https://checktest.dev</a>,
+          and other sites we own and operate.
         </p>
 
         <h2>1. Information we collect</h2>
@@ -290,7 +290,8 @@ export default function PagePrivacy() {
         <h2>11. Contact us</h2>
 
         <p>
-          If you have any questions about our privacy policy, please contact us.
+          If you have any questions about our privacy policy, please contact us
+          at <a href="mailto:privacy@checktest.dev">privacy@checktest.dev</a>.
         </p>
       </article>
     </PagesLayout>

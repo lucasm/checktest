@@ -57,9 +57,10 @@ export default function PageHome() {
 
             <p>
               Someday I wake up and decided to create CheckTest.dev to became a
-              place to Developers easily test Web Apps, get reports from the
-              leading testing services and learning resources from the
-              community. Help keep this project active by donating!
+              place to Developers easily test Web Applications, get reports from
+              the leading testing services and learning resources from the
+              community and tech industry. Help keep this project active by
+              donating!
             </p>
 
             <Button

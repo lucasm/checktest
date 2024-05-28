@@ -9,7 +9,7 @@
   color: var(--color-black);
   background: var(--color-green-translucent);
   border: none;
-  border-radius: 50rem;
+  border-radius: var(--radius);
   font-size: var(--font-size-5);
   font-weight: var(--font-weight-bold);
   transition: var(--transition);
@@ -22,4 +22,13 @@
 .button svg {
   width: 1.25rem;
   height: 1.25rem;
+}
+
+.small {
+  padding: 0.75rem 1.5rem;
+  font-size: var(--font-size-4);
+}
+.large {
+  padding: 1.25rem 2.5rem;
+  font-size: var(--font-size-5);
 }

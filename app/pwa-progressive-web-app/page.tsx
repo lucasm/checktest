@@ -1,3 +1,4 @@
+import ExternalLinks from '@/components/ExternalLinks'
 import CheckLayout from '@/layouts/CheckLayout'
 import { CATEGORIES } from '@/routes/categories'
 import type { Metadata } from 'next'
@@ -27,53 +28,32 @@ export default function PagePwa() {
         </p>
 
         <h3>Resources</h3>
-        <ul>
-          <li>
-            <a
-              href="https://web.dev/explore/progressive-web-apps"
-              target="_blank"
-              rel="noopener"
-            >
-              Progressive Web Apps (web.dev)
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps"
-              target="_blank"
-              rel="noopener"
-            >
-              Progressive Web Apps (MDN Web Docs)
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://whatpwacando.today/"
-              target="_blank"
-              rel="noopener"
-            >
-              What PWA Can Do Today
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://learn.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/"
-              target="_blank"
-              rel="noopener"
-            >
-              Microsoft Learn
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.freecodecamp.org/news/what-are-progressive-web-apps/"
-              target="_blank"
-              rel="noopener"
-            >
-              FreeCodeCamp
-            </a>
-          </li>
-        </ul>
+
+        <ExternalLinks
+          links={[
+            {
+              url: 'https://web.dev/explore/progressive-web-apps',
+              text: 'web.dev'
+            },
+            {
+              url: 'https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps',
+              text: 'MDN Web Docs'
+            },
+            {
+              url: 'https://whatpwacando.today/',
+              text: 'What PWA Can Do Today'
+            },
+            {
+              url: 'https://learn.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/',
+
+              text: 'Microsoft Learn'
+            },
+            {
+              url: 'https://www.freecodecamp.org/news/what-are-progressive-web-apps/',
+              text: 'freeCodeCamp'
+            }
+          ]}
+        />
       </article>
     </CheckLayout>
   )

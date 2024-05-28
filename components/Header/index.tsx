@@ -50,7 +50,7 @@ export default function Header() {
           href="https://github.com/lucasm/checktest"
         >
           <IconGitHub />
-          Star on GitHub
+          GitHub
         </Button>
 
         <Button

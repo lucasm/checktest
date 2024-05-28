@@ -95,7 +95,7 @@ export const CATEGORIES: Categories = {
     id: 'carbon-footprint',
     title: 'Carbon Footprint',
     description:
-      'Check website estimated carbon footprint and get reports to plan reduce actions.',
+      'Check website estimated carbon footprint to plan reduce actions.',
     icon: IconLeaf
   },
   'pwa-progressive-web-app': {

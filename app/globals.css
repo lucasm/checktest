@@ -125,6 +125,8 @@ section {
 article {
   text-align: left;
   padding: 2rem;
+  margin: 0 auto;
+  max-width: var(--max-width-md);
 }
 article h1,
 article h2,

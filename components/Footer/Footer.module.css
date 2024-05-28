@@ -4,6 +4,9 @@
   text-align: center;
   width: 100%;
 }
+.footer p {
+  font-size: var(--font-size-4);
+}
 
 .footerContainer {
   display: flex;
