@@ -14,7 +14,7 @@ export default function PageSecurity() {
   return (
     <CheckLayout category={category}>
       <article>
-        <h2>What is Cybersecurity?</h2>
+        <h2>What is Web Security?</h2>
 
         <p>
           Security is the practice of defending digital information from
@@ -28,7 +28,7 @@ export default function PageSecurity() {
           data breaches, and ensure the privacy and safety of users.
         </p>
 
-        <p>Check above security tools and resources and learn more below.</p>
+        <p>Check your website security above.</p>
 
         <h3>Resources</h3>
 
@@ -36,7 +36,11 @@ export default function PageSecurity() {
           links={[
             {
               url: 'https://www.owasp.org/',
-              text: 'OWASP'
+              text: 'OWASP - Open Web Application Security Project'
+            },
+            {
+              url: 'https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Website_security',
+              text: 'Website Security (MDN Web Docs)'
             }
           ]}
         />

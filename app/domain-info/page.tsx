@@ -14,7 +14,7 @@ export default function PageDomainInfo() {
   return (
     <CheckLayout category={category}>
       <article>
-        <h2> What is a Domain Name?</h2>
+        <h2> What is a Web Domain?</h2>
         <p>
           A domain is a human-readable name that represents an IP address on the
           internet. It is used to identify websites and resources on the web.
@@ -35,7 +35,7 @@ export default function PageDomainInfo() {
           more.
         </p>
 
-        <p>Check above domain name info and learn more below.</p>
+        <p>Check above domain name information.</p>
 
         <h3>Resources</h3>
 
@@ -43,7 +43,7 @@ export default function PageDomainInfo() {
           links={[
             {
               url: 'https://www.icann.org/en/beginners',
-              text: 'ICANN - Internet Corporation for Assigned Names and Numbers'
+              text: 'ICANN - Internet Corporation'
             },
             {
               url: 'https://www.godaddy.com/',

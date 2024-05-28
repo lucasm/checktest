@@ -14,13 +14,13 @@ export default function PageHome() {
       <main>
         <div className="home">
           <div className="box">
-            <h1>Web testing made easy</h1>
+            <h1>Easily Test Your Web Apps</h1>
             <p>
               Get reports from testing services, tools and learning resources.
             </p>
 
             <Button type="link" href="#start">
-              Start testing
+              Get started
             </Button>
           </div>
 
@@ -44,7 +44,7 @@ export default function PageHome() {
             https://twitter.com/intent/tweet?text=Hey%20friends!%20I%20loved%20how%20%40CheckTestDev%20can%20easily%20test%20web%20apps.%20I%20recommend!%20%23CheckTest"
             >
               <IconX />
-              Post @CheckTestDev
+              Post #CheckTest
             </Button>
           </div>
         </section>
@@ -54,10 +54,10 @@ export default function PageHome() {
             <h2>Open source</h2>
 
             <p>
-              Someday I wake up and decided to create CheckTest.dev to became a
-              place to Developers easily test Web Applications, get reports from
-              the leading testing services and learning resources. Help keep
-              this project active by donating!
+              Someday I woke up and decided to create CheckTest to become a
+              place for all Developers test Web Applications easily, get reports
+              from testing services, and access learning resources. Help keep
+              this project active by donating! — Lucas
             </p>
 
             <Button

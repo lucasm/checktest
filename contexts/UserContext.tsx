@@ -13,12 +13,14 @@ interface UserContextType {
   theme: string
   setTheme: (theme: string) => void
   sources: SourceFile | null
+  stars: number
 }
 
 const UserContext = createContext<UserContextType>({
   theme: 'light',
   setTheme: () => {},
-  sources: null
+  sources: null,
+  stars: 0
 })
 
 interface UserContextProviderProps {
@@ -45,12 +47,21 @@ export function UserContextProvider({ children }: UserContextProviderProps) {
       : setTheme(prefersDarkMode ? 'dark' : 'light')
   }, [])
 
+  //get github stars of repo https://api.github.com/repos/lucasm/checktest
+  const [stars, setStars] = useState<number>(0)
+  useEffect(() => {
+    fetch('https://api.github.com/repos/lucasm/checktest')
+      .then((response) => response.json())
+      .then((data) => setStars(data.stargazers_count))
+  }, [])
+
   return (
     <UserContext.Provider
       value={{
         theme,
         setTheme,
-        sources
+        sources,
+        stars
       }}
     >
       {children}

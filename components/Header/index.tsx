@@ -5,10 +5,12 @@ import Link from 'next/link'
 import Style from './Header.module.css'
 import Button from '../Button'
 import ImageIcon from '../ImageIcon'
-import { IconCoffee, IconGitHub, IconHome } from '../SvgIcons'
+import { IconCoffee, IconGitHub, IconHome, IconX } from '../SvgIcons'
 import { CATEGORIES } from '@/routes/categories'
+import { useUser } from '@/contexts/UserContext'
 
 export default function Header() {
+  const { stars } = useUser()
   const [isActive, setActive] = useState<boolean>(false)
 
   useEffect(() => {
@@ -49,8 +51,11 @@ export default function Header() {
           target="external"
           href="https://github.com/lucasm/checktest"
         >
-          <IconGitHub />
-          GitHub
+          <IconGitHub /> {stars}
+        </Button>
+
+        <Button type="link" target="external" href="https://x.com/checktestdev">
+          <IconX /> Follow
         </Button>
 
         <Button

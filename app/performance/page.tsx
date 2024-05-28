@@ -25,7 +25,7 @@ export default function PagePerformance() {
           combination of front-end and back-end optimizations.{' '}
         </p>
 
-        <p>Check website performance above and see reference below </p>
+        <p>Check above website performance.</p>
 
         <h3>Resources</h3>
 
