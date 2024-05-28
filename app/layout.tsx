@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     default: 'CheckTest',
     template: '%s | CheckTest'
   },
-  description: 'Open source tool to audit URLs and get reports'
+  description: 'Open source tests for developers and software engineers.'
 }
 
 export default function RootLayout({

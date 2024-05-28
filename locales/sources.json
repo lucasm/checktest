@@ -380,6 +380,24 @@
       ]
     },
     {
+      "url": "seo-meta-tags",
+      "active": true,
+      "subcategories": [
+        {
+          "services": [
+            {
+              "name": "HEY META",
+              "url": "https://www.heymeta.com/url/"
+            },
+            {
+              "name": "MetaTags.io",
+              "url": "https://metatags.io/?url="
+            }
+          ]
+        }
+      ]
+    },
+    {
       "url": "api-endpoint",
       "active": true,
       "subcategories": [
@@ -420,18 +438,24 @@
       ]
     },
     {
-      "url": "seo-meta-tags",
+      "url": "pwa-progressive-web-app",
       "active": true,
       "subcategories": [
         {
           "services": [
             {
-              "name": "HEY META",
-              "url": "https://www.heymeta.com/url/"
+              "name": "Microsoft PWA Builder",
+              "url": "https://www.pwabuilder.com/reportcard?site=",
+              "protocol": true
             },
             {
-              "name": "MetaTags.io",
-              "url": "https://metatags.io/?url="
+              "name": "Google Lighthouse",
+              "url": "https://developers.google.com/web/tools/lighthouse",
+              "unavailable": true
+            },
+            {
+              "name": "SEOReviewTools",
+              "url": "https://www.seoreviewtools.com/pwa-testing-tool/"
             }
           ]
         }
@@ -565,30 +589,6 @@
             {
               "name": "Unicheck",
               "url": "https://unicheck.com/"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "url": "pwa-progressive-web-app",
-      "active": true,
-      "subcategories": [
-        {
-          "services": [
-            {
-              "name": "Microsoft PWA Builder",
-              "url": "https://www.pwabuilder.com/reportcard?site=",
-              "protocol": true
-            },
-            {
-              "name": "Google Lighthouse",
-              "url": "https://developers.google.com/web/tools/lighthouse",
-              "unavailable": true
-            },
-            {
-              "name": "SEOReviewTools",
-              "url": "https://www.seoreviewtools.com/pwa-testing-tool/"
             }
           ]
         }

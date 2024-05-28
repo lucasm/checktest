@@ -3,7 +3,8 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
-  margin: 3rem auto 0;
+  margin: 3rem auto;
+  padding: 1rem;
   width: 100%;
   max-width: var(--max-width-full);
 }
@@ -31,15 +32,21 @@
   width: 2.75rem;
   height: 2.75rem;
 }
-.links h2 {
+.links h3 {
   font-size: 1.5rem;
   /* text-align: left; */
   width: 100%;
+}
+.links h2 {
+  position: relative;
+  width: 100%;
+  margin-bottom: 2rem;
 }
 
 @media screen and (min-width: 900px) {
   .links {
     gap: 1.5rem;
+    padding: 1.5rem;
   }
   .links a {
     gap: 3.5rem;

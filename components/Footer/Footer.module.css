@@ -10,5 +10,13 @@
 
 .footerContainer {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 600px) {
+  .footerContainer {
+    gap: 2rem;
+    flex-direction: row;
+  }
 }

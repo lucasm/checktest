@@ -29,11 +29,9 @@ export default function PageHome() {
           </div>
         </div>
 
-        <section id="start">
-          <h2>Most popular tests</h2>
-
+        <div id="start">
           <Links />
-        </section>
+        </div>
 
         <section>
           <div className="container">
@@ -43,7 +41,7 @@ export default function PageHome() {
               type="link"
               target="external"
               href="
-            https://twitter.com/intent/tweet?text=Post%20%23CheckTestDev%20on%20X%20https%3A%2F%2Fchecktest.dev%2F%20%40lucasmenezes&source=checktest.dev"
+            https://twitter.com/intent/tweet?text=Hello%20friends!%20I%20loved%20how%20%40CheckTestDev%20can%20easily%20test%20web%20apps.%20I%20recommend!%20%23CheckTest"
             >
               <IconX />
               Post @CheckTestDev

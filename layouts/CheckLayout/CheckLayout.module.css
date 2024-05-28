@@ -1,7 +1,7 @@
 .layoutCheck {
   width: 100%;
   margin: 0 auto 1.5rem;
-  padding: 0 1.5rem;
+  padding: 0 1rem;
   max-width: var(--max-width-full);
 }
 .layoutCheckHeader {
@@ -31,4 +31,10 @@
   fill: none;
   stroke-width: 0.25;
   stroke: currentcolor;
+}
+
+@media screen and (min-width: 900px) {
+  .layoutCheck {
+    padding: 0 1.5rem;
+  }
 }

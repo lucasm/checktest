@@ -29,8 +29,8 @@ export default function PageDomainInfo() {
         </p>
 
         <p>
-          Domain names are registered with domain registrars, which assign them
-          to individuals or organizations for a fee. Once registered, the domain
+          Domain names are registered with registrars, which assign them to
+          individuals or organizations for a fee. Once registered, the domain
           name can be used to host a website, create custom email addresses, and
           more.
         </p>
