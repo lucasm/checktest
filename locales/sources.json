@@ -98,20 +98,20 @@
           "title": "Malware",
           "services": [
             {
-              "name": "Google Safe Browsing",
-              "url": "https://transparencyreport.google.com/safe-browsing/search?url="
-            },
-            {
               "name": "Sucuri SiteCheck",
               "url": "https://sitecheck.sucuri.net/results/"
             },
             {
-              "name": "VirusTotal",
-              "url": "https://www.virustotal.com/gui/domain/"
-            },
-            {
               "name": "Quttera",
               "url": "https://quttera.com/detailed_report/"
+            },
+            {
+              "name": "Google Safe Browsing",
+              "url": "https://transparencyreport.google.com/safe-browsing/search?url="
+            },
+            {
+              "name": "VirusTotal",
+              "url": "https://www.virustotal.com/gui/domain/"
             },
             {
               "name": "URLVoid",
@@ -267,7 +267,7 @@
           "title": "Core Web Vitals",
           "services": [
             {
-              "name": "Google PageSpeed",
+              "name": "Google PageSpeed Insights",
               "url": "https://pagespeed.web.dev/analysis/?url=https%3A%2F%2Fglobo.com%2F"
             },
             {
