@@ -35,7 +35,7 @@ const CookiesPopup = () => {
         isVisible ? styles.slideUp : styles.slideDown
       }`}
     >
-      <p>CheckTest uses cookies for better navigation</p>
+      <p>Checktest uses cookies for better navigation</p>
       <div>
         <button onClick={handleAccept}>Accept</button>
         <Link href="/privacy">Privacy</Link>

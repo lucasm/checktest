@@ -14,23 +14,23 @@ export default function PageUxAccessibility() {
   return (
     <CheckLayout category={category}>
       <article>
-        <h2>What is UX and Web Accessibility?</h2>
+        <h2>Why User Experience (UX) and Web Accessibility matter?</h2>
 
         <p>
-          UX stands for User Experience, which is the overall experience a user
-          has when interacting with a product or service. Web accessibility is
-          the practice of making websites usable by all people with abilities or
-          disabilities.
+          User Experience (UX) and web accessibility are important because they
+          help create a positive experience for users. By making websites
+          accessible to all users, you can increase your audience, sales
+          conversion, brand feels and improve the overall user experience.
         </p>
 
         <p>
-          UX and web accessibility are important because they help create a
-          positive experience for users. By making websites accessible to all
-          users, you can increase your audience, sales conversion, brand feels
-          and improve the overall user experience.
+          UX focuses on how users interact with a website, while accessibility
+          ensures that all users, including those with disabilities, can access
+          and use the website effectively. Both are crucial for creating
+          inclusive and user-friendly web applications.
         </p>
 
-        <h3>Resources</h3>
+        <h3>Resources:</h3>
 
         <ExternalLinks
           links={[

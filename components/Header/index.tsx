@@ -4,8 +4,8 @@ import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import Style from './Header.module.css'
 import Button from '../Button'
-import ImageIcon from '../ImageIcon'
-import { IconCoffee, IconGitHub, IconHome, IconX } from '../SvgIcons'
+
+import { IconGitHubSponsors, IconGitHub, IconHome, IconX } from '../SvgIcons'
 import { CATEGORIES } from '@/routes/categories'
 import { useUser } from '@/contexts/UserContext'
 
@@ -41,7 +41,7 @@ export default function Header() {
 
         <Link href="/" className={Style.logo} translate="no">
           {/* <ImageIcon src={'check'} width={32} height={32} /> */}
-          CheckTest
+          Checktest
         </Link>
       </div>
 
@@ -61,10 +61,9 @@ export default function Header() {
         <Button
           type="link"
           target="external"
-          href="https://buymeacoffee.com/lucasm"
+          href="https://github.com/sponsors/lucasm"
         >
-          <IconCoffee />
-          Buy Me a Coffee
+          <IconGitHubSponsors /> Sponsor
         </Button>
       </div>
 

@@ -33,7 +33,7 @@ export type Categories = {
 export const CATEGORIES: Categories = {
   'domain-info': {
     id: 'domain-info',
-    title: 'Domain Info',
+    title: 'Domain Information',
     description: 'Check domain name information, ownership, and availability.',
     icon: IconContactInfo
   },
@@ -54,7 +54,7 @@ export const CATEGORIES: Categories = {
     id: 'ux-accessibility',
     title: 'UX & Accessibility',
     description:
-      'Check website heuristics of UX and accessibility, and best practices to improve them.',
+      'Check web app heuristics of UX and accessibility, and best practices to improve them.',
     icon: IconAccessibility
   },
   'code-technology': {

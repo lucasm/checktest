@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
-  description: 'CheckTest Privacy Policy.'
+  description: 'Checktest Privacy Policy.'
 }
 
 export default function PagePrivacy() {
@@ -13,7 +13,7 @@ export default function PagePrivacy() {
         <h1>Privacy Policy</h1>
 
         <p>
-          Your privacy is important. It is CheckTest's policy to respect your
+          Your privacy is important. It is Checktest's policy to respect your
           privacy regarding any information we may collect from you across our
           website, <a href="https://checktest.dev">https://checktest.dev</a>,
           and other sites we own and operate.

@@ -6,15 +6,16 @@
   --font-size-4: 1rem;
   --font-size-5: 1.2rem;
   --font-weight-bold: 550;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+  --font-mono:
+    ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
   --color-white: #fff;
   --color-gray: #edf6f1;
   --color-grey: #d0ffe9;
-  --color-black: #000;
+  --color-black: #000000;
   --color-green: #3cffd0;
-  --color-green-translucent: #9af1c8;
+  --color-green-translucent: #8df6c5;
   --color-grey-translucent: rgba(0, 0, 0, 0.05);
   --background-white: #fff;
   --background-gray: #f4f4f4;
@@ -26,7 +27,8 @@
   --border-radius: 12px;
   --border-radius-min: 0.75rem;
   --border-radius-full: 20rem;
-  --box-shadow: 0 1.6px 3.6px 0 rgb(0 0 0 / 7%), 0 0.3px 0.9px 0 rgb(0 0 0 / 5%);
+  --box-shadow:
+    0 1.6px 3.6px 0 rgb(0 0 0 / 7%), 0 0.3px 0.9px 0 rgb(0 0 0 / 5%);
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -73,6 +75,7 @@ html {
 }
 body {
   text-align: center;
+  color: var(--color-black);
   background: var(--color-white);
 }
 

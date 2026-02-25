@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="container">
         <div className={Style.footerContainer}>
           <p translate="no">
-            {getYear()} &copy; <Link href="/">CheckTest</Link>.dev
+            {getYear()} &copy; <Link href="/">Checktest</Link>
           </p>
           <p>
             Made by{' '}
@@ -21,7 +21,7 @@ const Footer = () => {
               rel="noopener noreferrer
               "
             >
-              Lucas Menezes
+              Lucas Maués
             </Link>
           </p>
           <p>
