@@ -11,14 +11,8 @@ export default function ExternalLinks({ links }: { links: Link[] }) {
   return (
     <ul className={Style.list}>
       {links.map((link, index) => (
-        <li>
-          <Button
-            key={index}
-            type="link"
-            target="external"
-            href={link.url}
-            size="small"
-          >
+        <li key={index}>
+          <Button type="link" target="external" href={link.url} size="small">
             {link.text}
             <IconArrowUpRight />
           </Button>

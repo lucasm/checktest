@@ -31,6 +31,10 @@
   transform: translateY(100%);
 }
 
+.cookiesPopup a {
+  color: var(--color-white);
+}
+
 .cookiesPopup button {
   background: var(--color-green-translucent);
   color: var(--color-black);

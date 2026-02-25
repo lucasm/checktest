@@ -93,6 +93,7 @@ input,
 a,
 button {
   font-family: var(--font-family);
+  color: var(--color-black);
 }
 
 h1,

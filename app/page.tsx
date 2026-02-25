@@ -14,7 +14,7 @@ export default function PageHome() {
       <main>
         <div className="home">
           <div className="box">
-            <h1>Easily Test Your Web Apps</h1>
+            <h1>Easily test your Web Apps</h1>
             <p>
               Get reports from testing services, tools and learning resources.
             </p>
