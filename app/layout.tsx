@@ -24,9 +24,9 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    absolute: 'Checktest',
+    absolute: 'Checktest — Fix your vibe coded Web App',
     default: 'Checktest',
-    template: '%s — Checktest'
+    template: 'Check %s — Checktest'
   },
   description: 'Open source tests for developers and software engineers.',
   keywords: [

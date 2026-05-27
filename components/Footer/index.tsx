@@ -10,13 +10,10 @@ const Footer = () => {
     <footer className={Style.footer}>
       <div className="container">
         <div className={Style.footerContainer}>
-          <p translate="no">
-            {getYear()} &copy; <Link href="/">Checktest</Link>
-          </p>
           <p>
-            Made by{' '}
+            Open source project made by{' '}
             <Link
-              href="https://lucasm.dev/?utm_source=checktest.dev&utm_medium=footer&utm_campaign=checktest.dev"
+              href="https://lucasmaues.com/?utm_source=checktest.dev&utm_medium=footer&utm_campaign=checktest.dev"
               target="_blank"
               rel="noopener noreferrer
               "
@@ -24,8 +21,13 @@ const Footer = () => {
               Lucas Maués
             </Link>
           </p>
+
           <p>
-            <Link href="/privacy">Privacy</Link>
+            <Link href="/privacy">Privacy Policy</Link>
+          </p>
+
+          <p translate="no">
+            {getYear()} &copy; <Link href="/">Checktest</Link>
           </p>
         </div>
       </div>
