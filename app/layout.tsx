@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   title: {
     absolute: 'Checktest — Fix your vibe coded Web App',
     default: 'Checktest',
-    template: 'Check %s — Checktest'
+    template: 'Check %s of Web App — Checktest'
   },
   description: 'Open source tests for developers and software engineers.',
   keywords: [

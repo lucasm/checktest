@@ -41,7 +41,7 @@ export const CATEGORIES: Categories = {
   security: {
     id: 'security',
     title: 'Security',
-    description: 'Check website security issues and vulnerabilities reports.',
+    description: 'Check web security issues and vulnerabilities reports.',
     icon: IconShield
   },
   performance: {
@@ -71,11 +71,11 @@ export const CATEGORIES: Categories = {
       'Test APIs endpoints, availability, response time, and status codes.',
     icon: IconCloud
   },
-  'seo-meta-tags': {
-    id: 'seo-meta-tags',
-    title: 'SEO & Meta Tags',
+  'meta-tags-seo': {
+    id: 'meta-tags-seo',
+    title: 'Meta Tags & SEO',
     description:
-      'Check page meta tags, and visibility on search engines and social media.',
+      'Check web app meta tags, and SEO visibility on search engines and social media.',
     icon: IconSearchBox
   },
   'market-analysis': {

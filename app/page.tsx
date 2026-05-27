@@ -14,9 +14,10 @@ export default function PageHome() {
       <main>
         <div className="home">
           <div className="box">
-            <h1>Fix your (vibe coded) Web App</h1>
+            <h1>Fix vibe coded Web Apps</h1>
             <p>
-              Get reports from popular services, tools and learning resources.
+              Get reports, tools and learning resources from the most popular
+              services.
             </p>
 
             <Button type="link" href="#start">
@@ -51,15 +52,16 @@ export default function PageHome() {
 
         <section>
           <div className="container">
-            <h2>Web testing, simplified</h2>
+            <h2>Simplifying web apps testing</h2>
 
             <p>
               Checktest started with a simple goal: to make web testing
-              accessible to all types of developers, even the vibe coders . Get
-              detailed reports form popular services, tools and learning
-              resources. Everything is built to help you level up your project.
-              Your sponsorship is what keeps the features rolling. If you like,
-              I’d be honored to have your sponsor. — Lucas Maués
+              accessible to all types of developers, specially for the vibe
+              coders. Get detailed testing reports, tools and learning resources
+              from most popular services. Everything is built to help you level
+              up your project. Your sponsorship is what keeps the features
+              rolling. If you like, I’d be honored to have your sponsor. — Lucas
+              Maués
             </p>
 
             <Button
