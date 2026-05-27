@@ -23,7 +23,8 @@ const ComponentLinks = () => {
 
       {activeCategoryDetails?.map((category, index) => (
         <Link key={index} href={category?.id}>
-          {category?.icon}
+          <figure>{category?.icon}</figure>
+
           <h3>{category?.title}</h3>
         </Link>
       ))}

@@ -9,33 +9,48 @@
   max-width: var(--max-width-full);
 }
 .links a {
-  display: grid;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  align-content: center;
-  gap: 1.5rem;
-  width: 100%;
-  /* max-width: 320px;
-  min-height: 180px; */
-  padding: 2rem;
   background: var(--color-gray);
   border-radius: var(--radius);
+  text-align: left;
+  place-content: center flex-start;
+  place-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  padding: 2rem;
   transition: all 0.2s;
+  display: grid;
+  justify-content: start;
+  grid-auto-flow: column;
 }
 .links a:hover,
 .links a:focus {
   transform: scale(1.025);
   background: var(--color-green-translucent) !important;
 }
+.links a:hover figure,
+.links a:focus figure {
+  background: var(--color-black) !important;
+}
+.links a:hover svg,
+.links a:focus svg {
+  filter: invert(1) sepia(1) grayscale(1);
+}
+
+.links figure {
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-green-translucent);
+  border-radius: 33.333%;
+}
 .links svg {
-  width: 2.75rem;
-  height: 2.75rem;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 .links h3 {
   font-size: 1.5rem;
-  /* text-align: left; */
-  width: 100%;
 }
 .links h2 {
   position: relative;
@@ -47,20 +62,20 @@
   .links {
     gap: 1.5rem;
     padding: 1.5rem;
+    width: 900px;
   }
   .links a {
-    gap: 3.5rem;
-    height: 25vw;
-    width: 25vw;
+    gap: 2.5rem;
+    height: auto;
+    width: 48%;
   }
 }
-@media screen and (min-width: 1200px) {
-  .links svg {
-    width: 3.5rem;
-    height: 3.5rem;
+
+@media screen and (min-width: 1400px) {
+  .links {
+    width: 1400px;
   }
   .links a {
-    height: 20vw;
-    width: 20vw;
+    width: 31.333%;
   }
 }

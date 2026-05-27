@@ -11,6 +11,7 @@ import {
   IconCode,
   IconContactInfo,
   IconDoc,
+  IconGlobe,
   IconLeaf,
   IconLink,
   IconPhoneDesktop,
@@ -53,20 +54,20 @@ export const CATEGORIES: Categories = {
   },
   'ux-accessibility': {
     id: 'ux-accessibility',
-    title: 'UX & Accessibility',
+    title: 'User Experience & Accessibility',
     description:
-      'Check web app heuristics of UX and accessibility, and best practices to improve them.',
+      'Check web app heuristics of user experience (UX) and accessibility (a11y) to get best practices.',
     icon: IconAccessibility
   },
   'code-technology': {
     id: 'code-technology',
-    title: 'Code & Technology',
+    title: 'Code Validation & Technology',
     description: 'Check website technology stack and code validation.',
     icon: IconCode
   },
   'api-endpoint': {
     id: 'api-endpoint',
-    title: 'API Endpoint',
+    title: 'API Endpoints',
     description:
       'Test APIs endpoints, availability, response time, and status codes.',
     icon: IconCloud
@@ -100,7 +101,7 @@ export const CATEGORIES: Categories = {
   },
   'pwa-progressive-web-app': {
     id: 'pwa-progressive-web-app',
-    title: 'Progressive Web App',
+    title: 'Progressive Web App (PWA)',
     description:
       'Check if a website is a PWA, with a valid manifest file, service worker and more.',
     icon: IconPhoneDesktop
@@ -112,10 +113,11 @@ export const CATEGORIES: Categories = {
       'Check website status, uptime, downtime, and response time worldwide.',
     icon: IconClock
   },
-  'broken-links': {
-    id: 'broken-links',
-    title: 'Broken Links',
-    description: 'Check broken links, dead links, and anchor text.',
+  'url-broken-links': {
+    id: 'url-broken-links',
+    title: 'URL & Broken Links',
+    description:
+      'Check URL redirection, HTTP status codes, and canonical tags. Check broken links, dead links, and anchor text.',
     icon: IconLink
   },
   'ai-content-detection': {
@@ -125,12 +127,11 @@ export const CATEGORIES: Categories = {
       'Check for plagiarism, duplicate content, and content quality.',
     icon: IconSparkle
   },
-  'url-redirect': {
-    id: 'url-redirect',
-    title: 'URL Redirect',
-    description:
-      'Check URL redirection, HTTP status codes, and canonical tags.',
-    icon: IconArrowRepeat
+  internationalization: {
+    id: 'internationalization',
+    title: 'Internationalization',
+    description: 'Check website internationalization (i18n) and localization.',
+    icon: IconGlobe
   },
   'archive-versions': {
     id: 'archive-versions',

@@ -264,7 +264,7 @@
       "active": true,
       "subcategories": [
         {
-          "title": "Core Web Vitals",
+          "title": "Web Vitals (Google)",
           "services": [
             {
               "name": "Google PageSpeed Insights",
@@ -275,13 +275,17 @@
               "url": "https://search.google.com/search-console/page-experience?resource_id=sc-domain%3A"
             },
             {
+              "name": "Chrome UX Report Visualizer",
+              "url": "https://cruxvis.withgoogle.com/#/"
+            },
+            {
               "name": "Calibre",
               "url": "https://calibreapp.com/tools/core-web-vitals-checker/"
             }
           ]
         },
         {
-          "title": "WCAG",
+          "title": "WCAG (Web Content Accessibility Guidelines)",
           "services": [
             {
               "name": "Accessibility Checker",
@@ -595,7 +599,7 @@
       ]
     },
     {
-      "url": "broken-links",
+      "url": "url-broken-links",
       "active": true,
       "subcategories": [
         {
@@ -621,7 +625,7 @@
       ]
     },
     {
-      "url": "url-redirect",
+      "url": "internationalization",
       "active": true
     },
     {

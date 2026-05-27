@@ -11,7 +11,11 @@ const Footer = () => {
       <div className="container">
         <div className={Style.footerContainer}>
           <p>
-            Open source project made by{' '}
+            Copyright &copy; {getYear()}{' '}
+            <Link href="/" translate="no">
+              Checktest
+            </Link>{' '}
+            made by{' '}
             <Link
               href="https://lucasmaues.com/?utm_source=checktest.dev&utm_medium=footer&utm_campaign=checktest.dev"
               target="_blank"
@@ -23,11 +27,13 @@ const Footer = () => {
           </p>
 
           <p>
-            <Link href="/privacy">Privacy Policy</Link>
-          </p>
-
-          <p translate="no">
-            {getYear()} &copy; <Link href="/">Checktest</Link>
+            <Link
+              href="https://lucasmaues.com/legal"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Privacy Policy & Terms of Service
+            </Link>
           </p>
         </div>
       </div>

@@ -14,7 +14,7 @@ export default function PageUxAccessibility() {
   return (
     <CheckLayout category={category}>
       <article>
-        <h2>Why User Experience (UX) and Web Accessibility matter?</h2>
+        <h2>Why User Experience and Accessibility matter?</h2>
 
         <p>
           User Experience (UX) and web accessibility are important because they
