@@ -4,7 +4,7 @@ import Header from '@/components/Header'
 import CookiesPopup from '@/components/CookiesPopup'
 import AnimatedShapes from '@/components/SvgAnimatedShapes'
 import Footer from '@/components/Footer'
-import { IconCoffee, IconGitHubSponsors, IconX } from '@/components/SvgIcons'
+import { IconGitHubSponsors, IconX } from '@/components/SvgIcons'
 
 export default function PageHome() {
   return (
@@ -14,9 +14,10 @@ export default function PageHome() {
       <main>
         <div className="home">
           <div className="box">
-            <h1>Fix vibe coded Web Apps</h1>
+            <h1>Fix your Web Apps</h1>
             <p>
-              Get reports, tools and learning resources from popular services.
+              Get testing reports, tools and learning resources from popular
+              services.
             </p>
 
             <Button type="link" href="#start">
@@ -35,7 +36,7 @@ export default function PageHome() {
 
         <section>
           <div className="container">
-            <h2>What's community are saying?</h2>
+            <h2>What's community are saying:</h2>
 
             <Button
               type="link"
@@ -51,7 +52,7 @@ export default function PageHome() {
 
         <section>
           <div className="container">
-            <h2>Web apps testing, simplified!</h2>
+            <h2>Simplifying web apps testing </h2>
 
             <p>
               Checktest makes web testing accessible for every developer —

@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="container">
         <div className={Style.footerContainer}>
           <p>
-            Copyright &copy; {getYear()}{' '}
+            &copy; {getYear()}{' '}
             <Link href="/" translate="no">
               Checktest
             </Link>{' '}

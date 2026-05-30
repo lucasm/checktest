@@ -9,34 +9,36 @@
 </div>
 
 <p align="center">
+<a href="https://buymeacoffee.com/lucasm" target="_blank"><img alt="Buy me a coffee" src="https://img.shields.io/badge/Buy me a coffee-$1-9af1c8?logo=kofi&logoColor=white"></a>
 <a href="https://github.com/lucasm/checktest/issues" target="_blank"><img alt="Issues" src="https://img.shields.io/github/issues/lucasm/checktest?color=9af1c8&logo=github&logoColor=white"></a>
-<a href="https://buymeacoffee.com/lucasm" target="_blank"><img alt="Donate" src="https://img.shields.io/badge/Donate-$1-9af1c8?logo=kofi&logoColor=white"></a>
 <a href="https://github.com/lucasm/checktest" target="_blank"><img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/lucasm/checktest?label=size&color=9af1c8&logo=github&logoColor=white"></a>
+
 </p>
 
-Checktest is a platform to facilitate web application testing for developers.
+Checktest is an open source tool to facilitate web application testing for all type of developers.
 
-It provides easy-to-use tools for testing web applications in production, accessing reports from leading testing services, and learning resources to enhance your testing skills.
+It provides easy-to-use tools for testing web apps in production. Get testing reports from popular services, and learning resources, to identify and fix issues, enhancing the quality of your projects.
 
-## Features
+## ℹ️ Features
 
-- Web Apps Testing: Easily test your web applications.
-- Access to Reports: Get reports from leading testing services to improve the quality of your applications.
-- Learning Resources: Access learning materials and resources to enhance your testing knowledge and skills.
+- 1️⃣ Top Web Apps Tests
+- 2️⃣ Redirect to Services Reports
+- 3️⃣ Learning References and Resources
 
-## Getting Started
+## ▶️ Getting Started
 
-To get started, visit [checktest.dev](https://checktest.dev/) - no sign up reuired. You can start testing your web applications, accessing reports, and exploring learning resources.
+To get started, visit [Checktest](https://checktest.dev/) - no sign up reuired. You can start testing your web applications, accessing reports, and exploring learning resources.
 
-## Contributing
+## 🔃 Contributing
 
-Feel free to submit a pull request or open an issue.
+Feel free to submit a PR or open an issue.
 
-## Donate
+## \*️⃣ Donate
 
-Support the maintenance of Checktest. If you find the platform useful, please consider making a donation.
+Support the maintenance of Checktest. If you consider it useful, please send a donation.
 
-- [Buy Me a Coffee](https://buymeacoffee.com/lucasm)
+- [Buy me a coffee](https://buymeacoffee.com/lucasm)
+- [GitHub Sponsors](https://github.com/sponsors/lucasm)
 
 ## License
 

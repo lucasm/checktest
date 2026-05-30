@@ -149,10 +149,6 @@ article ul li {
   margin-bottom: 0.75rem;
 }
 
-.svg {
-  fill: var(--color-black);
-}
-
 .container {
   position: relative;
   margin: 0 auto;

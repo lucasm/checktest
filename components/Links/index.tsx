@@ -19,7 +19,7 @@ const ComponentLinks = () => {
 
   return (
     <div className={Style.links}>
-      <h2>Most popular tests:</h2>
+      <h2>Popular tests:</h2>
 
       {activeCategoryDetails?.map((category, index) => (
         <Link key={index} href={category?.id}>

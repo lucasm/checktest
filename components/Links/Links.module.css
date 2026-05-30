@@ -25,7 +25,7 @@
 .links a:hover,
 .links a:focus {
   transform: scale(1.025);
-  background: var(--color-green-translucent) !important;
+  /* background: var(--color-green-translucent) !important; */
 }
 .links a:hover figure,
 .links a:focus figure {
@@ -33,7 +33,7 @@
 }
 .links a:hover svg,
 .links a:focus svg {
-  filter: invert(1) sepia(1) grayscale(1);
+  color: var(--color-green-translucent) !important;
 }
 
 .links figure {
@@ -48,6 +48,7 @@
 .links svg {
   width: 2.5rem;
   height: 2.5rem;
+  color: var(--color-black);
 }
 .links h3 {
   font-size: 1.5rem;
@@ -65,7 +66,7 @@
     width: 900px;
   }
   .links a {
-    gap: 2.5rem;
+    gap: 2rem;
     height: auto;
     width: 48%;
   }

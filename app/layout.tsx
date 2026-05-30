@@ -6,8 +6,6 @@ import Telemetry from './telemetry'
 
 const inter = Work_Sans({ subsets: ['latin'] })
 
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://checktest.app'
-
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
@@ -22,9 +20,9 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL(baseUrl),
+  metadataBase: new URL('https://checktest.dev'),
   title: {
-    absolute: 'Checktest — Fix vibe coded Web Apps',
+    absolute: 'Checktest — Fix your Web Apps',
     default: 'Checktest',
     template: 'Check %s of Web Application — Checktest'
   },
@@ -38,7 +36,10 @@ export const metadata: Metadata = {
     'developer tools',
     'checktest'
   ],
-  authors: [{ name: 'Checktest', url: baseUrl }],
+  authors: [
+    { name: 'Checktest', url: 'https://checktest.dev/' },
+    { name: 'Lucas Maués', url: 'https://lucasmaues.com/' }
+  ],
   creator: 'Checktest',
   publisher: 'Checktest',
   applicationName: 'Checktest',
@@ -57,27 +58,21 @@ export const metadata: Metadata = {
   manifest: '/manifest.json',
   category: 'technology',
   robots: { index: true, follow: true, nocache: false },
+
   openGraph: {
+    title: 'Checktest — Fix your Web Apps',
+    description: 'Checktest is an open source testing tool for web apps.',
     type: 'website',
-    url: baseUrl,
     siteName: 'Checktest',
-    title: 'Checktest',
-    description: 'Open source tests for developers and software engineers.',
-    images: [
-      {
-        url: `${baseUrl}/share.png`,
-        width: 1200,
-        height: 630,
-        alt: 'Checktest - open source tests for developers',
-        type: 'image/png'
-      }
-    ]
+    images: '/share.png'
   },
   twitter: {
+    title: 'Checktest — Fix your Web Apps',
+    description: 'Checktest is an open source testing tool for web apps.',
+    site: '@checktestdev',
+    creator: '@lucasmmau',
     card: 'summary_large_image',
-    title: 'Checktest',
-    description: 'Open source tests for developers and software engineers.',
-    images: [`${baseUrl}/share.png`]
+    images: '/share.png'
   }
 }
 
