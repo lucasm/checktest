@@ -15,7 +15,7 @@ const Footer = () => {
             <Link href="/" translate="no">
               Checktest
             </Link>{' '}
-            made by{' '}
+            by{' '}
             <Link
               href="https://lucasmaues.com/?utm_source=checktest.dev&utm_medium=footer&utm_campaign=checktest.dev"
               target="_blank"
