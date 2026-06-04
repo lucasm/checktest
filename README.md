@@ -19,25 +19,25 @@ Checktest is an open source tool to facilitate web application testing for all t
 
 It provides easy-to-use tools for testing web apps in production. Get testing reports from popular services, and learning resources, to identify and fix issues, enhancing the quality of your projects.
 
-## ℹ️ Features
+## Features
 
-- 1️⃣ Top Web Apps Tests
-- 2️⃣ Redirect to Services Reports
-- 3️⃣ Learning References and Resources
+- Top Web Apps Tests
+- Redirect to Services Reports
+- Learning References and Resources
 
-## ▶️ Getting Started
+## Getting Started
 
 To get started, visit [Checktest](https://checktest.dev/) - no sign up reuired. You can start testing your web applications, accessing reports, and exploring learning resources.
 
-## 🔃 Contributing
+## Contributing
 
 Feel free to submit a PR or open an issue.
 
-## \*️⃣ Donate
+## Donate
 
-Support the maintenance of Checktest. If you consider it useful, please send a donation.
+If you consider Checktest useful, please send a donation.
 
-- [Buy me a coffee](https://buymeacoffee.com/lucasm)
+- [Buy Me A Coffee](https://buymeacoffee.com/lucasm)
 - [GitHub Sponsors](https://github.com/sponsors/lucasm)
 
 ## License

@@ -14,7 +14,7 @@ export default function PageHome() {
       <main>
         <div className="home">
           <div className="box">
-            <h1>Fix your Web Apps</h1>
+            <h1>Fix your vibe coded Web App</h1>
             <p>
               Get testing reports, tools and learning resources from popular
               services.
